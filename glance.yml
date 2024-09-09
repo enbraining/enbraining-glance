@@ -1,0 +1,68 @@
+theme:
+      light: true
+      background-color: 0 0 95
+      primary-color: 0 0 10
+      negative-color: 0 90 50
+pages:
+  - name: Home
+    columns:
+      - size: small
+        widgets:
+          - type: monitor
+            cache: 1m
+            title: Services
+            sites:
+              - title: GSMAN
+                url: https://gsm.fodo.dev
+              - title: Kolosseum
+                url: https://kolosseum.fodo.dev/
+              - title: Prisism
+                url: https://prisism.com
+                # icon: /assets/jellyfin-logo.png
+              # - title: Gitea
+              #   url: https://gitea.yourdomain.com
+              #   icon: /assets/gitea-logo.png
+              # - title: Immich
+              #   url: https://immich.yourdomain.com
+              #   icon: /assets/immich-logo.png
+              # - title: AdGuard Home
+              #   url: https://adguard.yourdomain.com
+              #   icon: /assets/adguard-logo.png
+              # - title: Vaultwarden
+              #   url: https://vault.yourdomain.com
+              #   icon: /assets/vaultwarden-logo.png
+
+          - type: reddit
+            subreddit: selfhosted
+            style: vertical-cards
+
+      - size: full
+        widgets:
+          - type: videos
+            title: 유튜브
+            channels:
+              - UCoW0vKiUGiYF976V78ev4aw # Enbraining
+
+          - type: rss
+            title: 블로그
+            limit: 10
+            collapse-after: 6
+            cache: 3h
+            feeds:
+              - url: https://blog.fodo.dev/feed.xml
+
+      - size: small
+        widgets:
+          - type: bookmarks
+            title: 북마크
+            groups:
+              - title: Social
+                links:
+                  - title: Github
+                    url: https://github.com/enbraining
+                  - title: LinkedIn
+                    url: https://linkedin.com/in/linkedin
+                  - title: YouTube
+                    url: https://www.youtube.com/@enbraining
+                  - title: X
+                    url: https://x.com/enbraining
